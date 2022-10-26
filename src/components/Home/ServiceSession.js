@@ -1,0 +1,82 @@
+import { Link } from 'react-router-dom';
+
+const colors = [
+  {
+    color: 'red',
+    icon: 'fa-sharp fa-solid fa-rocket-launch',
+  },
+  {
+    color: 'yellow',
+    icon: 'fa-sharp fa-solid fa-bolt',
+  },
+  {
+    color: 'sky',
+    icon: 'fa-sharp fa-solid fa-umbrella',
+  },
+  {
+    color: 'orange',
+    icon: 'fa-sharp fa-solid fa-heart',
+  },
+  {
+    color: 'emerald',
+    icon: 'fa-sharp fa-solid fa-paper-plane',
+  },
+  {
+    color: 'violet',
+    icon: 'fa-sharp fa-solid fa-feather',
+  },
+  {
+    color: 'pink',
+    icon: 'fa-sharp fa-solid fa-globe',
+  },
+];
+
+export default function ServiceSession({ services }) {
+  return (
+    <>
+      <section className='pb-20 bg-slate-100 z-2'>
+        <div className='lg:container lg:mx-auto lg:px-6 px-4'>
+          <div className='uppercase text-4xl text-center font-bold py-8 text-emerald-500 '>
+            our services
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+            {services &&
+              services.map((service, index) => (
+                <div key={service.id} className='w-full text-center'>
+                  <div className='relative flex flex-col min-w-0 break-words w-full shadow-lg rounded-lg h-full group'>
+                    <div className='px-4 py-5 flex-auto relative z-3'>
+                      <div className='z-2'>
+                        <div
+                          className={`text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-${colors[index].color}-400`}
+                        >
+                          <i className={colors[index].icon}></i>
+                        </div>
+                        <h6 className='text-xl font-semibold'>
+                          <Link
+                            to={'/services/' + service.path}
+                            className='hover:text-emerald-500 text-white inline-block'
+                          >
+                            {service.title}
+                          </Link>
+                        </h6>
+                        <p className='mt-2 mb-4 text-slate-300'>
+                          {service.summary}
+                        </p>
+                      </div>
+                    </div>
+                    <div className='absolute inset-0 rounded-lg overflow-hidden brightness-50'>
+                      <img
+                        className='w-full h-full object-cover transition group-hover:scale-110 duration-500'
+                        src={service.thumbnail}
+                        alt=''
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
