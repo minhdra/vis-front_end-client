@@ -51,7 +51,7 @@ export default function Navbar({services, products}) {
               className=' text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase'
               to='/'
             >
-              <img className='w-[200px]' src={ require('../../../assets/img/logos/vninspection-high-resolution-logo-black-on-transparent-background.png')} alt='logo vninspection'/>
+              <img className='w-[200px]' src={ require('../../../assets/img/logos/vninspection-high-resolution-logo-white-on-transparent-background.png')} alt='logo vninspection'/>
             </Link>
             <button
               className='cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none -mr-3'

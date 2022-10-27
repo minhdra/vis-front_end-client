@@ -10,7 +10,7 @@ export default function Home({ setTitle }) {
     window.scrollTo(0, 0);
   }, []);
 
-  const [services] = useOutletContext();
+  const { services } = useOutletContext();
   
   useEffect(() => {
     setTitle(title);

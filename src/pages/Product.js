@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useOutletContext, useParams } from 'react-router-dom';
 import Main from '../components/Product/MainProduct';
 import Sidebar from '../components/Shared/Sidebar/Sidebar';
 import { getByPath } from '../services/product';
@@ -7,7 +7,7 @@ import { getByPath } from '../services/product';
 const title = 'VN-Inspection - Products';
 
 export default function Product({ setTitle }) {
-  
+  const { products }  = useOutletContext();
   const params = useParams();
   const [data, setData] = useState();
   
@@ -28,7 +28,7 @@ export default function Product({ setTitle }) {
     <>
       <div className='flex flex-wrap lg:container mx-auto lg:px-6 px-4 py-6 relative'>
         <Main data={data} /> 
-        <Sidebar />
+        <Sidebar products={products} />
       </div>
     </>
   )

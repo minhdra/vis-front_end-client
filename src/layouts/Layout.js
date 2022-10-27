@@ -32,7 +32,7 @@ export default function Layout() {
     <>
       <Navbar transparent services={services} products={products} />
       <main>
-        <Outlet context={[services, products]} />
+        <Outlet context={{ services, products }} />
       </main>
       <Footer />
     </>
