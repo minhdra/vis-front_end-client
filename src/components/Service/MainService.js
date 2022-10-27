@@ -1,7 +1,17 @@
+import { useEffect } from 'react';
 import { formatDateTime } from '../../utils/formatDate';
 import FooterClient from '../Shared/Footers/FooterClient';
 
-export default function Main({ data }) {
+export default function Main({ setTitle, data }) {
+  useEffect(() => {
+    if (data?.title)
+      setTitle('VN-Inspection - ' + data.title);
+  }, [data?.title, setTitle]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [data?.title]);
+
   return (
     <>
       <div className='min-h-[50vh] lg:w-2/3 w-full lg:pr-4 lg:border-r border-slate-200'>

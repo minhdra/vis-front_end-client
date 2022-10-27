@@ -1,4 +1,4 @@
-export default function Sidebar() {
+export default function Sidebar({products}) {
   return (
     <>
       <div className='lg:pl-4 lg:w-1/3 w-full border-t pt-4 lg:border-t-0 lg:pt-0 mb-8'>
@@ -62,6 +62,20 @@ export default function Sidebar() {
             >
 
             </textarea>
+
+            <div className='font-semibold mb-2'>
+              What Industry are you primarily interested in?
+            </div>
+            <select
+              className='border-0 px-3 py-3 mb-4 placeholder-slate-400 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
+            >
+              <option value='' selected>Select an Industry</option>
+              {products && products.map((product) => (
+                <option key={product._id} value={product.name}>
+                  {product.name}
+                </option>
+              ))}
+            </select>
 
             <button type='submit' className='bg-emerald-400 text-slate-50 py-2 px-6 w-full font-semibold text-lg rounded hover:bg-emerald-500 hover:text-white transition'>
               Contact Us

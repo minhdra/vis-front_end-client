@@ -4,20 +4,10 @@ import Main from '../components/Product/MainProduct';
 import Sidebar from '../components/Shared/Sidebar/Sidebar';
 import { getByPath } from '../services/product';
 
-const title = 'VN-Inspection - Products';
-
 export default function Product({ setTitle }) {
   const { products }  = useOutletContext();
   const params = useParams();
   const [data, setData] = useState();
-  
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [data]);
-
-  useEffect(() => {
-    setTitle(title);
-  }, [setTitle]);
 
   useEffect(() => {
     if (params)
@@ -27,7 +17,7 @@ export default function Product({ setTitle }) {
   return (
     <>
       <div className='flex flex-wrap lg:container mx-auto lg:px-6 px-4 py-6 relative'>
-        <Main data={data} /> 
+        <Main setTitle={setTitle} data={data} /> 
         <Sidebar products={products} />
       </div>
     </>

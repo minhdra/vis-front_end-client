@@ -2,31 +2,31 @@ import { Link } from 'react-router-dom';
 
 const colors = [
   {
-    color: 'red',
+    color: 'bg-red-400',
     icon: 'fa-sharp fa-solid fa-rocket-launch',
   },
   {
-    color: 'yellow',
+    color: 'bg-yellow-400',
     icon: 'fa-sharp fa-solid fa-bolt',
   },
   {
-    color: 'sky',
+    color: 'bg-sky-400',
     icon: 'fa-sharp fa-solid fa-umbrella',
   },
   {
-    color: 'orange',
+    color: 'bg-orange-400',
     icon: 'fa-sharp fa-solid fa-heart',
   },
   {
-    color: 'emerald',
+    color: 'bg-emerald-400',
     icon: 'fa-sharp fa-solid fa-paper-plane',
   },
   {
-    color: 'violet',
+    color: 'bg-violet-400',
     icon: 'fa-sharp fa-solid fa-feather',
   },
   {
-    color: 'pink',
+    color: 'bg-pink-400',
     icon: 'fa-sharp fa-solid fa-globe',
   },
 ];
@@ -47,7 +47,7 @@ export default function ServiceSession({ services }) {
                     <div className='px-4 py-5 flex-auto relative z-3'>
                       <div className='z-2'>
                         <div
-                          className={`text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-${colors[index].color}-400`}
+                          className={`text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full ` + colors[index].color}
                         >
                           <i className={colors[index].icon}></i>
                         </div>
