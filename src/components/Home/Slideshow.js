@@ -23,7 +23,7 @@ export default function Slideshow() {
 
   return (
     <>
-      <div className='relative pt-16 pb-32 flex content-center items-center justify-center min-h-[65vh]'>
+      <div className='relative pt-16 pb-32 flex content-center items-center justify-center min-h-[80vh]'>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           className='!absolute top-0 w-full h-full !z-0'
