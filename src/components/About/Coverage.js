@@ -4,7 +4,7 @@ export default function Coverage() {
   return (
     <>
       <div className='w-full'>
-        <h2 className='text-xl font-semibold'>Our Coverage</h2>
+        <h2 className='text-2xl font-bold'>Our Coverage</h2>
         <div className='py-2'>
           <img
             className='w-full object-cover'

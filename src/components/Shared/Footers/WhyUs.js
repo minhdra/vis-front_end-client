@@ -2,7 +2,7 @@ export default function WhyUs() {
   return (
     <>
       <div className='w-full'>
-        <h2 className='text-xl font-semibold'>Why us?</h2>
+        <h2 className='text-2xl font-bold'>Why Us?</h2>
         <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6'>
           <div className='py-2'>
             <div className='flex flex-col items-center gap-2 mb-2'>
@@ -12,11 +12,10 @@ export default function WhyUs() {
                 alt=''
               />
               <div className='font-semibold text-center text-md text-emerald-500'>
-                Professional and experienced Vietnamese inspectors
+                Professional and experienced local inspectors
               </div>
               <div className='text-left italic'>
-                Our team has inspectors who specialize in hardlines, softlines and
-                EE as well as have worked in famous inspection service companies.
+                Our team members who have worked in famous inspection service companies specialize in hardlines, softlines and E&E
               </div>
             </div>
           </div>
@@ -33,7 +32,7 @@ export default function WhyUs() {
               <div className='text-left italic'>
                 Vietnamese have a sentence “The cheapest is dearest”.
                 <br />
-                We only give you our best services
+                We give you our best services
                 with your satisfaction price.
               </div>
             </div>
@@ -46,12 +45,12 @@ export default function WhyUs() {
                 alt=''
               />
               <div className='font-semibold text-md text-emerald-500'>
-                Instant report
+                Powerful report
               </div>
               <div className='text-left italic'>
-                Our clients will get report within 12 hours after finishing
-                inspection. <br/>
-                Insert thousands of photos into a report in a short time. Get report within 12 hours after finishing inspection.
+                We have our own reports for all products. <br/>
+                Insert thousands of photos into a report in a short time. <br />
+                Get report within 12 hours after finishing inspection.
               </div>
             </div>
           </div>

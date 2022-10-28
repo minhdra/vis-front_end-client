@@ -1,35 +1,35 @@
 import { Link } from 'react-router-dom';
 
-const colors = [
-  {
-    color: 'bg-red-400',
-    icon: 'fa-sharp fa-solid fa-rocket-launch',
-  },
-  {
-    color: 'bg-yellow-400',
-    icon: 'fa-sharp fa-solid fa-bolt',
-  },
-  {
-    color: 'bg-sky-400',
-    icon: 'fa-sharp fa-solid fa-umbrella',
-  },
-  {
-    color: 'bg-orange-400',
-    icon: 'fa-sharp fa-solid fa-heart',
-  },
-  {
-    color: 'bg-emerald-400',
-    icon: 'fa-sharp fa-solid fa-paper-plane',
-  },
-  {
-    color: 'bg-violet-400',
-    icon: 'fa-sharp fa-solid fa-feather',
-  },
-  {
-    color: 'bg-pink-400',
-    icon: 'fa-sharp fa-solid fa-globe',
-  },
-];
+// const colors = [
+//   {
+//     color: 'bg-red-400',
+//     icon: 'fa-sharp fa-solid fa-rocket-launch',
+//   },
+//   {
+//     color: 'bg-yellow-400',
+//     icon: 'fa-sharp fa-solid fa-bolt',
+//   },
+//   {
+//     color: 'bg-sky-400',
+//     icon: 'fa-sharp fa-solid fa-umbrella',
+//   },
+//   {
+//     color: 'bg-orange-400',
+//     icon: 'fa-sharp fa-solid fa-heart',
+//   },
+//   {
+//     color: 'bg-emerald-400',
+//     icon: 'fa-sharp fa-solid fa-paper-plane',
+//   },
+//   {
+//     color: 'bg-violet-400',
+//     icon: 'fa-sharp fa-solid fa-feather',
+//   },
+//   {
+//     color: 'bg-pink-400',
+//     icon: 'fa-sharp fa-solid fa-globe',
+//   },
+// ];
 
 export default function ServiceSession({ services }) {
   return (
@@ -46,20 +46,20 @@ export default function ServiceSession({ services }) {
                   <div className='relative flex flex-col min-w-0 break-words w-full shadow-lg rounded-lg h-full group'>
                     <div className='px-4 py-5 flex-auto relative z-3'>
                       <div className='z-2'>
-                        <div
+                        {/* <div
                           className={`text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full ` + colors[index].color}
                         >
                           <i className={colors[index].icon}></i>
-                        </div>
-                        <h6 className='text-xl font-semibold'>
+                        </div> */}
+                        <h6 className='text-3xl font-semibold'>
                           <Link
                             to={'/services/' + service.path}
-                            className='hover:text-emerald-500 text-white inline-block'
+                            className='hover:text-emerald-500 text-white'
                           >
                             {service.title}
                           </Link>
                         </h6>
-                        <p className='mt-2 mb-4 text-slate-300'>
+                        <p className='mt-2 mb-4 text-slate-200'>
                           {service.summary}
                         </p>
                       </div>

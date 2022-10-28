@@ -23,7 +23,7 @@ export default function DesktopNavbar({services, products}) {
           
           <li className='flex items-center'>
             <Link
-              className='lg:text-white lg:hover:text-slate-100 text-slate-500 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+              className='lg:text-white lg:hover:text-slate-100 text-slate-500 px-3 py-4 lg:py-2 flex items-center text-md uppercase font-bold'
               to={'/about'}
 
             >

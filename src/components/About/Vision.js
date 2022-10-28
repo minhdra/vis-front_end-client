@@ -45,10 +45,10 @@ export default function Vision() {
               <div className='font-semibold text-md text-emerald-500'>
                 Our values
               </div>
-              <ul className='list-item list-disc ml-4 italic'>
-                <li className='py-2'>Objectiveness & Transparency</li>
-                <li className='py-2'>Preciseness & Integrity</li>
-                <li className='py-2'>Respect & Gratitude</li>
+              <ul className='italic'>
+                <li className='pt-1'>Objectiveness & Transparency</li>
+                <li className='pt-1'>Preciseness & Integrity</li>
+                <li className='pt-1'>Respect & Gratitude</li>
               </ul>
             </div>
           </div>

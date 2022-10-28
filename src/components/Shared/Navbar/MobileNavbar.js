@@ -16,7 +16,7 @@ export default function MobileNavbar({ navbarOpen, setNavbarOpen, services, prod
       >
         <ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
           <li
-            className='flex items-center justify-between lg:text-white lg:hover:text-slate-100 text-slate-500 px-4 py-4 lg:py-2 text-sm uppercase font-bold hover:text-white hover:bg-emerald-600 transition cursor-pointer'
+            className='flex items-center justify-between lg:text-white lg:hover:text-slate-100 text-slate-500 px-4 py-4 lg:py-2 text-md uppercase font-bold hover:text-white hover:bg-emerald-600 transition cursor-pointer'
             onClick={() => setShowService(!showService)}
           >
             Services{' '}
@@ -37,20 +37,20 @@ export default function MobileNavbar({ navbarOpen, setNavbarOpen, services, prod
                 <Link
                   key={item.id}
                   to={'/services/' + item.path}
-                  className='text-slate-900 text-sm px-4 py-6 pt-0 font-medium hover:text-emerald-500'
+                  className='text-slate-900 text-md px-4 py-6 pt-0 font-medium hover:text-emerald-500'
                   onClick={()=>setNavbarOpen(false)}
                 >
                   {item.title}
                 </Link>
               ))
             ) : (
-              <span className='text-slate-900 text-sm px-4 py-2 pt-0 font-medium'>
+              <span className='text-slate-900 text-md px-4 py-2 pt-0 font-medium'>
                 Loading...
               </span>
             )}
           </div>
           <li
-            className='flex items-center justify-between lg:text-white lg:hover:text-slate-100 text-slate-500 px-4 py-4 lg:py-2 text-sm uppercase font-bold hover:text-white hover:bg-emerald-600 transition cursor-pointer'
+            className='flex items-center justify-between lg:text-white lg:hover:text-slate-100 text-slate-500 px-4 py-4 lg:py-2 text-md uppercase font-bold hover:text-white hover:bg-emerald-600 transition cursor-pointer'
             onClick={() => setShowProduct(!showProduct)}
           >
             Products{' '}
@@ -71,14 +71,14 @@ export default function MobileNavbar({ navbarOpen, setNavbarOpen, services, prod
                 <Link
                   key={item.id}
                   to={'/products/' + item.path}
-                  className='text-slate-900 text-sm px-4 py-6 pt-0 font-medium hover:text-emerald-500'
+                  className='text-slate-900 text-md px-4 py-6 pt-0 font-medium hover:text-emerald-500'
                   onClick={()=>setNavbarOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))
             ) : (
-              <span className='text-slate-900 text-sm px-4 py-2 pt-0 font-medium'>
+              <span className='text-slate-900 text-md px-4 py-2 pt-0 font-medium'>
                 Loading...
               </span>
             )}
@@ -86,7 +86,7 @@ export default function MobileNavbar({ navbarOpen, setNavbarOpen, services, prod
 
           <Link
             to={'/about'}
-            className='flex items-center lg:text-white lg:hover:text-slate-100 text-slate-500 px-4 py-4 lg:py-2 text-sm uppercase font-bold hover:text-white hover:bg-emerald-600 transition cursor-pointer'
+            className='flex items-center lg:text-white lg:hover:text-slate-100 text-slate-500 px-4 py-4 lg:py-2 text-md uppercase font-bold hover:text-white hover:bg-emerald-600 transition cursor-pointer'
             onClick={()=>setNavbarOpen(false)}
           >
             About us

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
-  
   return (
     <>
       <footer className='relative bg-slate-700 pt-8 pb-6'>
@@ -26,12 +25,12 @@ export default function Footer() {
         </div>
         <div className='container mx-auto px-4'>
           <div className='flex flex-wrap text-center lg:text-left'>
-            <div className='w-full lg:w-6/12 px-4'>
+            <div className='w-full lg:w-1/2 px-4'>
               <h4 className='text-3xl font-semibold text-slate-50 mb-1'>
-                Let's keep in touch!
+                Let us provide the best services for you
               </h4>
               <h5 className='text-lg mt-0 mb-2 text-slate-50'>
-                Find us on any of these platforms, we respond 1-2 business days.
+                Please don’t hesitate to contact us if you have any questions, we'll respond within 12 hours.
               </h5>
               <div className='mt-6 lg:mb-0 mb-6 flex items-center lg:justify-start justify-center'>
                 <a
@@ -64,28 +63,41 @@ export default function Footer() {
                 </a>
                 <div className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 relative group'>
                   <div
-                    className='absolute top-full left-0 py-2 px-4 bg-white rounded group-hover:block hidden'
-                    onClick={() => {
-                      navigator.clipboard.writeText(this.state.textToCopy);
-                    }}
+                    className='absolute top-full left-0 py-2 px-4 bg-white rounded group-hover:block hidden w-32'
                   >
-                    0979702787
+                    ID: vninspect
                   </div>
-                  <img
-                    className='w-full h-full rounded-full object-cover'
-                    src={require('../../../assets/img/icon/8.PNG')}
-                    alt='Wechat'
-                  />
+                  <a
+                    href='https://www.wechat.com/'
+                    className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
+                    type='button'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <img
+                      className='w-full h-full rounded-full object-cover'
+                      src={require('../../../assets/img/icon/8.PNG')}
+                      alt='Wechat'
+                    />
+                  </a>
                 </div>
                 <div className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 relative group'>
                   <div className='absolute top-full left-0 py-2 px-4 bg-white rounded group-hover:block hidden'>
                     0979702787
                   </div>
-                  <img
-                    className='w-full h-full rounded-full object-cover'
-                    src={require('../../../assets/img/icon/10.PNG')}
-                    alt='Whatsapp'
-                  />
+                  <a
+                    href='https://www.whatsapp.com/'
+                    className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
+                    type='button'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <img
+                      className='w-full h-full rounded-full object-cover'
+                      src={require('../../../assets/img/icon/10.PNG')}
+                      alt='Whatsapp'
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -101,15 +113,7 @@ export default function Footer() {
                         className='text-slate-100 hover:text-slate-300 font-semibold block pb-2 text-sm'
                         to='/about'
                       >
-                        About us
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className='text-slate-100 hover:text-slate-300 font-semibold block pb-2 text-sm'
-                        to='/'
-                      >
-                        Help
+                        About Us
                       </Link>
                     </li>
                   </ul>
@@ -152,10 +156,10 @@ export default function Footer() {
               <div className='text-sm text-slate-400 font-semibold py-1'>
                 Copyright © {new Date().getFullYear()}{' '}
                 <a
-                  href='https://github.com/minhdra'
+                  href='https://vninspect.com'
                   className='text-slate-100 hover:text-slate-200'
                 >
-                  Le Minh
+                  VN INSPECTION TEAM
                 </a>
                 .
               </div>

@@ -4,7 +4,7 @@ const NavbarProductsDropdown = ({ products }) => {
 
   return (
     <div className='group relative'>
-      <div className='lg:text-white lg:hover:text-slate-100 text-slate-500 px-3 py-4 lg:py-2 flex items-center gap-2 text-xs uppercase font-bold cursor-default select-none'>
+      <div className='lg:text-white lg:hover:text-slate-100 text-slate-500 px-3 py-4 lg:py-2 flex items-center gap-2 text-md uppercase font-bold cursor-default select-none'>
         Products{' '}
         <i
           className={
@@ -23,7 +23,7 @@ const NavbarProductsDropdown = ({ products }) => {
               key={item.id}
               to={'/products/' + item.path}
               className={
-                'text-sm py-4 px-4 font-medium block w-full whitespace-nowrap bg-transparent text-slate-500 hover:text-emerald-500 hover:bg-emerald-50 transition'
+                'text-md py-4 px-4 font-medium block w-full whitespace-nowrap bg-transparent text-slate-500 hover:text-emerald-500 hover:bg-emerald-50 transition'
               }
             >
               {item.name}
