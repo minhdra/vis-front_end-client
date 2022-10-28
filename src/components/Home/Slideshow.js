@@ -43,7 +43,7 @@ export default function Slideshow() {
                 <div
                   className='absolute top-0 w-full h-full bg-center bg-cover'
                   style={{
-                    backgroundImage: "url('" + slide.backgroundImage +"')",
+                    backgroundImage: "url('" + slide.backgroundImage + "')",
                   }}
                 >
                   <span
@@ -60,32 +60,33 @@ export default function Slideshow() {
                         </h1>
                         <Link
                           to={slide.redirectTo}
-                          className='mt-4 inline-block text-lg text-slate-100 px-6 py-2 bg-green-500 rounded hover:bg-green-600 align-middle transition'>
-                          {slide.contentLink} <i className="fa-regular fa-angle-right"></i>
+                          className='mt-4 inline-block text-lg text-slate-100 px-6 py-2 bg-emerald-500 rounded-lg hover:bg-emerald-600 align-middle transition'
+                        >
+                          {slide.contentLink}
                         </Link>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-            className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
-            style={{ transform: "translateZ(0)" }}
-          >
-            <svg
-              className="absolute bottom-0 overflow-hidden"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon
-                className="text-slate-100 fill-current"
-                points="2560 0 2560 100 0 100"
-              ></polygon>
-            </svg>
-          </div>
+                  className='top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px'
+                  style={{ transform: 'translateZ(0)' }}
+                >
+                  <svg
+                    className='absolute bottom-0 overflow-hidden'
+                    xmlns='http://www.w3.org/2000/svg'
+                    preserveAspectRatio='none'
+                    version='1.1'
+                    viewBox='0 0 2560 100'
+                    x='0'
+                    y='0'
+                  >
+                    <polygon
+                      className='text-slate-100 fill-current'
+                      points='2560 0 2560 100 0 100'
+                    ></polygon>
+                  </svg>
+                </div>
               </SwiperSlide>
             ))
           ) : (

@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
-import { formatDateTime } from '../../utils/formatDate';
-import FooterClient from '../Shared/Footers/FooterClient';
+import WhyUs from '../Shared/Footers/WhyUs';
 
 export default function Main({ setTitle, data }) {
   useEffect(() => {
@@ -16,10 +15,6 @@ export default function Main({ setTitle, data }) {
     <>
       <div className='min-h-[50vh] lg:w-2/3 w-full lg:pr-4 lg:border-r border-slate-200'>
         <h1 className='text-3xl font-semibold pb-4'>{data?.name}</h1>
-        <span className='text-slate-400 pb-4 inline-block'>
-          {formatDateTime(data?.updatedAt)} {'  '}{' '}
-          <i className='fa-regular fa-clock'></i>
-        </span>
         <div className='w-full h-[200px] overflow-hidden'>
           <img
             className='w-full h-full object-cover transition duration-500 hover:scale-110'
@@ -32,7 +27,7 @@ export default function Main({ setTitle, data }) {
           dangerouslySetInnerHTML={{ __html: data?.content }}
         ></div>
 
-        <FooterClient />
+        <WhyUs />
       </div>
     </>
   );
