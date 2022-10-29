@@ -48,10 +48,13 @@ export default function Navbar({services, products}) {
         >
           <div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
             <Link
-              className=' text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase'
+              className=' text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap'
               to='/'
             >
-              <img className='w-[200px]' src={ require('../../../assets/img/logos/vninspection-high-resolution-logo-white-on-transparent-background.png')} alt='logo vninspection'/>
+              <img className='w-[200px]' src={require('../../../assets/img/logos/vninspection-high-resolution-logo-white-on-transparent-background.png')} alt='logo vninspection' />
+              <div className='text-sm text-left text-slate-50 border-t mt-1 pt-1'>
+                Your Inspection Partner
+              </div>
             </Link>
             <button
               className='cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none -mr-3'
