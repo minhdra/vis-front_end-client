@@ -7,26 +7,26 @@ export default function WhyUs() {
           <div className='py-2'>
             <div className='flex flex-col items-center gap-2 mb-2'>
               <img
-                className='w-20 h-20 rounded-full object-cover shadow'
+                className='w-14 h-14 rounded-full object-cover shadow'
                 src={require('../../../assets/img/icon/4.PNG')}
                 alt=''
               />
-              <div className='font-semibold text-center text-md text-emerald-500'>
+              <div className='font-semibold text-center text-xl text-emerald-500'>
                 Professional and experienced local inspectors
               </div>
               <div className='text-left italic'>
-                Our team members who have worked in famous inspection service companies specialize in hardlines, softlines and E&E
+                Our team members who have worked in famous inspection service companies specialize in hardlines, softlines and E&E.
               </div>
             </div>
           </div>
           <div className='py-2'>
             <div className='flex flex-col items-center gap-2 mb-2'>
               <img
-                className='w-20 h-20 rounded-full object-cover shadow'
+                className='w-14 h-14 rounded-full object-cover shadow'
                 src={require('../../../assets/img/icon/5.PNG')}
                 alt=''
               />
-              <div className='font-semibold text-md text-emerald-500'>
+              <div className='font-semibold text-xl text-emerald-500'>
                 Good price, good services
               </div>
               <div className='text-left italic'>
@@ -40,14 +40,14 @@ export default function WhyUs() {
           <div className='py-2'>
             <div className='flex flex-col items-center gap-2 mb-2'>
               <img
-                className='w-20 h-20 rounded-full object-cover shadow'
+                className='w-14 h-14 rounded-full object-cover shadow'
                 src={require('../../../assets/img/icon/6.PNG')}
                 alt=''
               />
-              <div className='font-semibold text-md text-emerald-500'>
+              <div className='font-semibold text-xl text-emerald-500'>
                 Powerful report
               </div>
-              <div className='text-left italic'>
+              <div className='text-justify italic'>
                 We have our own reports for all products. <br/>
                 Insert thousands of photos into a report in a short time. <br />
                 Get report within 12 hours after finishing inspection.

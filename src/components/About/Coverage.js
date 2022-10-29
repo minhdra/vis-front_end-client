@@ -26,7 +26,7 @@ export default function Coverage() {
             </li>
             <li className='py-2'>
               North West Vietnam – 6 provinces: Hoa Binh, Son La, Dien Bien, Lai
-              Chai, Lao Cai, Yen Bai
+              Chau, Lao Cai, Yen Bai
             </li>
             <li className='py-2'>
               Red River Delta – 10 provinces and city: Hanoi, Vinh Phuc, Bac

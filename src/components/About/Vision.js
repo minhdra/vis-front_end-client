@@ -6,31 +6,31 @@ export default function Vision() {
           <div className='py-2'>
             <div className='flex flex-col items-center gap-2 mb-2'>
               <img
-                className='w-20 h-20 rounded-full object-cover shadow'
+                className='w-14 h-14 rounded-full object-cover shadow'
                 src={require('../../assets/img/icon/2.PNG')}
                 alt=''
               />
-              <div className='font-semibold text-center text-md text-emerald-500'>
+              <div className='font-semibold text-center text-xl text-emerald-500'>
                 Our mission
               </div>
               <div className='text-left italic'>
                 Save your money, help your sales run smoothly and delete your
-                quality worry
+                quality worry.
               </div>
             </div>
           </div>
           <div className='py-2'>
             <div className='flex flex-col items-center gap-2 mb-2'>
               <img
-                className='w-20 h-20 rounded-full object-cover shadow'
+                className='w-14 h-14 rounded-full object-cover shadow'
                 src={require('../../assets/img/icon/1.PNG')}
                 alt=''
               />
-              <div className='font-semibold text-md text-emerald-500'>
+              <div className='font-semibold text-xl text-emerald-500'>
                 Our vision
               </div>
               <div className='text-left italic'>
-                Be the most trustworthy inspection and audit service providing
+                Be the most trustworthy inspection service providing
                 team in Vietnam.
               </div>
             </div>
@@ -38,11 +38,11 @@ export default function Vision() {
           <div className='py-2'>
             <div className='flex flex-col items-center gap-2 mb-2'>
               <img
-                className='w-20 h-20 rounded-full object-cover shadow'
+                className='w-14 h-14 rounded-full object-cover shadow'
                 src={require('../../assets/img/icon/3.PNG')}
                 alt=''
               />
-              <div className='font-semibold text-md text-emerald-500'>
+              <div className='font-semibold text-xl text-emerald-500'>
                 Our values
               </div>
               <ul className='italic'>

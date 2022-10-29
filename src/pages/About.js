@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Main from '../components/About/MainAbout';
 
-const title = 'VN-Inspection - About Us';
+const title = 'VN Inspection Team – Your Inspection Partner';
 
 export default function About({ setTitle }) {
   useEffect(() => {

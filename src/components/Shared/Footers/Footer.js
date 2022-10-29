@@ -127,7 +127,7 @@ export default function Footer() {
                       <i className='fa-solid fa-house'></i>
                       <span className='py-2'>Hanoi</span>
                     </li>
-                    <li className='text-slate-100 flex items-center gap-2 pb-2 text-sm font-semibold lg:justify-start justify-center'>
+                    <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold lg:justify-start justify-center'>
                       <i className='fa-solid fa-envelope'></i>
                       <a
                         href='mailto:info@vninspect.com'
@@ -136,7 +136,7 @@ export default function Footer() {
                         info@vninspect.com
                       </a>
                     </li>
-                    <li className='text-slate-100 flex items-center gap-2 pb-2 text-sm font-semibold lg:justify-start justify-center'>
+                    <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold lg:justify-start justify-center'>
                       <i className='fa-solid fa-phone'></i>
                       <a
                         href='tel:0979702787'
