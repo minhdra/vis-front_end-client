@@ -36,9 +36,9 @@ export default function ServiceSession({ services }) {
     <>
       <section className='pb-20 bg-slate-100 z-2'>
         <div className='lg:container lg:mx-auto lg:px-6 px-4'>
-          <div className='uppercase text-4xl text-center font-bold py-8 text-emerald-500 '>
+          <h2 className='uppercase text-4xl text-center font-bold py-8 text-emerald-500/90 '>
             our services
-          </div>
+          </h2>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
             {services &&
               services.map((service, index) => (
@@ -51,14 +51,14 @@ export default function ServiceSession({ services }) {
                         >
                           <i className={colors[index].icon}></i>
                         </div> */}
-                        <h6 className='text-3xl font-semibold'>
+                        <h3 className='text-3xl font-semibold'>
                           <Link
                             to={'/services/' + service.path}
                             className='hover:text-emerald-500 text-white'
                           >
                             {service.title}
                           </Link>
-                        </h6>
+                        </h3>
                         <p className='mt-2 mb-4 text-slate-200'>
                           {service.summary}
                         </p>

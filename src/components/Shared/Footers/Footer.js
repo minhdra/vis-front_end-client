@@ -107,10 +107,10 @@ export default function Footer() {
                   <span className='block uppercase text-slate-400 text-sm font-semibold mb-2'>
                     Useful link
                   </span>
-                  <ul className='list-unstyled'>
+                  <ul className='list-unstyled mb-4'>
                     <li>
                       <Link
-                        className='text-slate-100 hover:text-slate-300 font-semibold block pb-2 text-sm'
+                        className='text-slate-100 hover:text-slate-300 font-semibold block py-2 text-sm'
                         to='/about'
                       >
                         About Us
@@ -123,15 +123,15 @@ export default function Footer() {
                     Contact
                   </span>
                   <ul className='list-unstyled'>
-                    <li className='text-slate-100 flex items-center gap-2 pb-2 text-sm font-semibold lg:justify-start justify-center'>
+                    <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold lg:justify-start justify-center'>
                       <i className='fa-solid fa-house'></i>
-                      <span>Hanoi</span>
+                      <span className='py-2'>Hanoi</span>
                     </li>
                     <li className='text-slate-100 flex items-center gap-2 pb-2 text-sm font-semibold lg:justify-start justify-center'>
                       <i className='fa-solid fa-envelope'></i>
                       <a
                         href='mailto:info@vninspect.com'
-                        className='hover:text-slate-200 hover:underline'
+                        className='hover:text-slate-200 hover:underline py-2'
                       >
                         info@vninspect.com
                       </a>
@@ -140,7 +140,7 @@ export default function Footer() {
                       <i className='fa-solid fa-phone'></i>
                       <a
                         href='tel:0979702787'
-                        className='hover:text-slate-200 hover:underline'
+                        className='hover:text-slate-200 hover:underline py-2'
                       >
                         +84 979 702 787
                       </a>
