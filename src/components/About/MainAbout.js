@@ -12,8 +12,6 @@ export default function Main() {
         <div className='w-full h-[1px] bg-slate-200 my-8'></div>
         <Coverage />
       </div>
-
-      
     </>
   );
 }

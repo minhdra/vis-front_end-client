@@ -14,9 +14,12 @@ export default function WhyUs() {
               <div className='font-semibold text-center text-xl text-emerald-500'>
                 Professional and experienced local inspectors
               </div>
-              <div className='text-left italic'>
-                Our team members who have worked in famous inspection service companies specialize in hardlines, softlines and E&E.
-              </div>
+              <ul className='list-disc ml-4'>
+                <li className='text-left italic'>
+                  Our team members who have worked in famous inspection service
+                  companies specialize in hardlines, softlines and E&E.
+                </li>
+              </ul>
             </div>
           </div>
           <div className='py-2'>
@@ -26,15 +29,18 @@ export default function WhyUs() {
                 src={require('../../../assets/img/icon/5.PNG')}
                 alt=''
               />
-              <div className='font-semibold text-xl text-emerald-500'>
+              <div className='font-semibold text-center text-xl text-emerald-500'>
                 Good price, good services
               </div>
-              <div className='text-left italic'>
-                Vietnamese have a sentence “The cheapest is dearest”.
-                <br />
-                We give you our best services
-                with your satisfaction price.
-              </div>
+              <ul className='list-disc ml-4'>
+                <li className='text-left italic mb-2'>
+                  Inspectors work professionally, precisely and swiftly.
+                </li>
+                <li className='text-left italic'>
+                  We always give you our best services with your price
+                  satisfaction.
+                </li>
+              </ul>
             </div>
           </div>
           <div className='py-2'>
@@ -47,11 +53,16 @@ export default function WhyUs() {
               <div className='font-semibold text-xl text-emerald-500'>
                 Powerful report
               </div>
-              <div className='text-justify italic'>
-                We have our own reports for all products. <br/>
-                Insert thousands of photos into a report in a short time. <br />
-                Get report within 12 hours after finishing inspection.
-              </div>
+              <ul className='list-disc ml-4'>
+                <li className='text-left italic mb-2'>
+                  Clients receive report within 12 hours after inspection
+                  finishes.
+                </li>
+                <li className='text-left italic'>
+                  We have our own reports for all products and insert thousands
+                  of photos into a report in a short time.
+                </li>
+              </ul>
             </div>
           </div>
         </div>

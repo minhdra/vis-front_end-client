@@ -45,11 +45,17 @@ export default function Vision() {
               <div className='font-semibold text-xl text-emerald-500'>
                 Our values
               </div>
-              <ul className='italic'>
-                <li className='pt-1'>Objectiveness & Transparency</li>
-                <li className='pt-1'>Preciseness & Integrity</li>
-                <li className='pt-1'>Respect & Gratitude</li>
-              </ul>
+              <div className='text-left italic'>
+              Objectiveness, Transparency, Preciseness, Integrity, Respect, Gratitude.
+              </div>
+              {/* <ul className='italic'>
+                <li className='pt-1'>Objectiveness</li>
+                <li className='pt-1'>Transparency</li>
+                <li className='pt-1'>Preciseness</li>
+                <li className='pt-1'>Integrity</li>
+                <li className='pt-1'>Respect</li>
+                <li className='pt-1'>Gratitude</li>
+              </ul> */}
             </div>
           </div>
         </div>

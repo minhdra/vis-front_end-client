@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 export default function Footer() {
   return (
     <>
@@ -102,22 +100,7 @@ export default function Footer() {
               </div>
             </div>
             <div className='w-full lg:w-6/12 px-4'>
-              <div className='flex flex-wrap items-top mb-6'>
-                <div className='w-full lg:w-4/12 px-4 ml-auto'>
-                  <span className='block uppercase text-slate-400 text-sm font-semibold mb-2'>
-                    Useful link
-                  </span>
-                  <ul className='list-unstyled mb-4'>
-                    <li>
-                      <Link
-                        className='text-slate-100 hover:text-slate-300 font-semibold block py-2 text-sm'
-                        to='/about'
-                      >
-                        About Us
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+              <div className='flex flex-wrap items-top mb-6 justify-end'>
                 <div className='w-full lg:w-5/12 px-4'>
                   <span className='block uppercase text-slate-400 text-sm font-semibold mb-2'>
                     Contact

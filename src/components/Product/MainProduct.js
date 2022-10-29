@@ -1,12 +1,8 @@
 import { useEffect } from 'react';
 import WhyUs from '../Shared/Footers/WhyUs';
+import SuggestLink from '../Shared/Suggests/SuggestLink';
 
-export default function Main({ setTitle, data }) {
-  useEffect(() => {
-    if (data?.name)
-      setTitle('VN-Inspection - ' + data.name);
-  }, [data?.name, setTitle]);
-
+export default function Main({ data, products }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [data?.name]);
@@ -26,7 +22,7 @@ export default function Main({ setTitle, data }) {
           className='leading-[2] py-4 text-md'
           dangerouslySetInnerHTML={{ __html: data?.content }}
         ></div>
-
+        <SuggestLink data={products} single={data} />
         <WhyUs />
       </div>
     </>

@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
 // layouts
@@ -11,11 +10,6 @@ import Service from './pages/Service';
 import About from './pages/About';
 
 export default function App() {
-  const [title, setTitle] = useState('VN-Inspection');
-
-  useEffect(() => {
-    window.document.title = title;
-  }, [title]);
 
   return (
     <>
@@ -23,10 +17,10 @@ export default function App() {
         <Routes>
           {/* add routes with layouts */}
           <Route element={<Layout />}>
-            <Route path='/' element={<Home setTitle={setTitle} />} />
-            <Route path='/about' element={<About setTitle={setTitle} />} />
-            <Route path='/services/:slug' element={<Service setTitle={setTitle} />} />
-            <Route path='/products/:slug' element={<Product setTitle={setTitle} />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/services/:slug' element={<Service />} />
+            <Route path='/products/:slug' element={<Product />} />
           </Route>
           <Route
             path='*'
