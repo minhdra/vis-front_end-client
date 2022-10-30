@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   return (
     <>
@@ -34,7 +36,6 @@ export default function Footer() {
                 <a
                   href='tel:0979702787'
                   className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                  type='button'
                   target='_blank'
                   rel='noopener noreferrer'
                   title='Phone Number'
@@ -46,9 +47,21 @@ export default function Footer() {
                   />
                 </a>
                 <a
+                  href='https://www.facebook.com/profile.php?id=100086861351190'
+                  className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Facebook'
+                >
+                  <img
+                    className='w-full h-full rounded-full object-cover'
+                    src={require('../../../assets/img/icon/13.PNG')}
+                    alt='facebook'
+                  />
+                </a>
+                <a
                   href='https://zalo.me/0979702787'
                   className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                  type='button'
                   target='_blank'
                   rel='noopener noreferrer'
                   title='Zalo'
@@ -56,7 +69,7 @@ export default function Footer() {
                   <img
                     className='w-full h-full rounded-full object-cover'
                     src={require('../../../assets/img/icon/9.PNG')}
-                    alt='phone'
+                    alt='zalo'
                   />
                 </a>
                 <div className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 relative group'>
@@ -68,7 +81,6 @@ export default function Footer() {
                   <a
                     href='https://www.wechat.com/'
                     className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                    type='button'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -86,7 +98,6 @@ export default function Footer() {
                   <a
                     href='https://www.whatsapp.com/'
                     className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                    type='button'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -140,12 +151,15 @@ export default function Footer() {
                 Copyright © {new Date().getFullYear()}{' '}
                 <a
                   href='https://vninspect.com'
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='text-slate-100 hover:text-slate-200'
                 >
                   VN INSPECTION TEAM
                 </a>
                 .
               </div>
+              <Link to={'/home'} className='text-slate-50'>vninspect.com</Link>
             </div>
           </div>
         </div>
