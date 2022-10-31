@@ -8,8 +8,12 @@ import Home from './pages/Home';
 import Product from './pages/Product';
 import Service from './pages/Service';
 import About from './pages/About';
+import { useEffect } from 'react';
 
 export default function App() {
+  useEffect(() => {
+    document.title = 'VN Inspection Team – Your Inspection Partner';
+  }, []);
 
   return (
     <>
