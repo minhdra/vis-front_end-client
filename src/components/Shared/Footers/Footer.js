@@ -76,7 +76,7 @@ export default function Footer() {
                   <div
                     className='absolute top-full left-0 py-2 px-4 bg-white rounded group-hover:block hidden w-32'
                   >
-                    ID: vninspect
+                    ID: vninspection
                   </div>
                   <a
                     href='https://www.wechat.com/'
